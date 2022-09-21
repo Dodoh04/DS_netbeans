@@ -1,14 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Model;
 
-/**
- *
- * @author manager
- */
+import javax.swing.JOptionPane;
+
+
 public class Mensagem_DAO {
+      static String nome ="José";
+    public static void Men1 () {
+        JOptionPane.showMessageDialog(null,nome);
+        
+    }
+    
+    public static void Men2 () {
+        
+        
+    }
     
 }
