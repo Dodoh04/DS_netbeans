@@ -1,0 +1,14 @@
+CONVERSÃO
+
+String operacao = JOptionPane.showInputDialog(null,"1. para soma \n2. para subtração \n3. para divisão \n4. para multiplicação.", "", -1);
+int m = Integer.parseInt(operacao);
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+POSSIVEL SOLUÇÃO DA CONVERSÃO DE STRINGS
+
+(variavel.equals("A") || variavel.equals("a")  comparação de strings
+
+---------------------------------------------------------------------------------------------------------------------------------
+CONVERSÃO DE STRING MINUSCO OU MAIUSCULO
+string x2 =  x.toIpperCase -- conversão de minusculo ou maiuscula
