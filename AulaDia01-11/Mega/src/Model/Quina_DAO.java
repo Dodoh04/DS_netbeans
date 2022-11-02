@@ -3,6 +3,7 @@ package Model;
 
 import java.util.Arrays;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 
 public class Quina_DAO {
@@ -22,5 +23,8 @@ public class Quina_DAO {
     for(int c = 0; c < 5; c++){
         total = total + val[c]+ " | ";
     }
+    View.Inicio_GUI.txt.setText(total);
+    
+    JOptionPane.showMessageDialog(null,total);
     }
 }

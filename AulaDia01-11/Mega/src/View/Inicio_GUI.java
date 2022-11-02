@@ -103,7 +103,7 @@ public class Inicio_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_Mega1ActionPerformed
 
     private void Mega2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mega2ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here: 
     }//GEN-LAST:event_Mega2ActionPerformed
 
     /**

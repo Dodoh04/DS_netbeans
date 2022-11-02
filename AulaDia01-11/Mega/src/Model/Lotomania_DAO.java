@@ -57,6 +57,7 @@ public class Lotomania_DAO {
         for(int c = 0; c < 5; c++){
             total4 = total4 + val4[c]+ " | ";
         }
-        JOptionPane.showMessageDialog(null,total1+"\n"+total2+"\n"+total3+"\n"+total4);
+        View.Inicio_GUI.txt.setText(total1+"\n"+total2+"\n"+total3+"\n"+total4);
+        //JOptionPane.showMessageDialog(null,total1+"\n"+total2+"\n"+total3+"\n"+total4);
     }
 }
