@@ -27,21 +27,84 @@ public class Inicio_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        txt = new javax.swing.JLabel();
+        Mega = new javax.swing.JButton();
+        Mega1 = new javax.swing.JButton();
+        Mega2 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 204, 255));
+
+        txt.setBackground(new java.awt.Color(255, 255, 255));
+
+        Mega.setText("Mega-Sena");
+        Mega.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MegaActionPerformed(evt);
+            }
+        });
+
+        Mega1.setText("Lotomania");
+        Mega1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mega1ActionPerformed(evt);
+            }
+        });
+
+        Mega2.setText("Quina");
+        Mega2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Mega2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(txt, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(81, 81, 81)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Mega)
+                            .addComponent(Mega1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(Mega2)))))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(141, 141, 141)
+                .addComponent(txt, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addComponent(Mega)
+                .addGap(18, 18, 18)
+                .addComponent(Mega2)
+                .addGap(11, 11, 11)
+                .addComponent(Mega1)
+                .addGap(43, 43, 43))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void MegaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MegaActionPerformed
+        Model.megaSena_DAO.MegaSena();
+    }//GEN-LAST:event_MegaActionPerformed
+
+    private void Mega1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mega1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Mega1ActionPerformed
+
+    private void Mega2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Mega2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Mega2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +142,9 @@ public class Inicio_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Mega;
+    private javax.swing.JButton Mega1;
+    private javax.swing.JButton Mega2;
+    public static javax.swing.JLabel txt;
     // End of variables declaration//GEN-END:variables
 }

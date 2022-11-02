@@ -21,7 +21,7 @@ public class megaSena_DAO {
         total = total + val[c]+ " | ";
     }
      
-    
+    View.Inicio_GUI.txt.setText(total);
     
     
     
