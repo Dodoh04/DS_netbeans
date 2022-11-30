@@ -13,6 +13,7 @@ public class Main {
 
    
     public static void main(String[] args) {
+      View.inicio_GUI.getFrames();
       Controller.Testa_DB.conecta();
     }
     
